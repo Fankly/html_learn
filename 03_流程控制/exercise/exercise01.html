@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 判断是否是奇数还是偶数
+        var num = parseInt(prompt("请输入一个数字"));
+        // 验证用户的输入是否合法,只有有效数字时,我们才检查是否是奇数还是偶数
+        if (isNaN(num) || num % 1 === 0) {
+            alert("请输入有效数字");
+        } else {
+
+            if (num % 2 == 0) {
+                alert("偶数");
+            } else {
+                alert("奇数");
+            }
+        }
+
+    </script>
+</body>
+
+</html>
