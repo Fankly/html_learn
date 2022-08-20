@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function test() {
+
+        }
+
+        let test1 = new test();
+
+        // 函数的原型链 test --> object --> Object --> null
+        console.log(test1.__proto__);
+
+        // Object的原型链 Object--> null
+        let object = new Object();
+        console.log(object.__proto__.__proto__)
+    </script>
+</body>
+</html>
