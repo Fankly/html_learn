@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+</head>
+<body>
+
+    <script>
+        class Animal {
+            constructor(name) {
+                this.name = name
+            }
+
+            sayHello() {
+                console.log("动物在叫~")
+            }
+        }
+
+        class Dog extends Animal {
+            /*
+            constructor(name){
+                this.name = name
+            }
+            */
+
+            sayHello() {
+                console.log("汪汪汪")
+            }
+
+        }
+
+        class Cat extends Animal {
+            /*
+           constructor(name){
+               this.name = name
+           }
+           */
+            sayHello() {
+                console.log("喵喵喵")
+            }
+
+        }
+
+        const dog = new Dog("旺财")
+        const cat = new Cat("汤姆")
+
+        console.log(dog.sayHello())
+        console.log(cat.sayHello())
+    </script>
+</body>
+</html>

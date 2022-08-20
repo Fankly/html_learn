@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+
+        class Person {
+            #name;
+            #age;
+            #gender;
+
+
+            constructor(name, age, gender) {
+                this.#name = name;
+                this.#age = age;
+                this.#gender = gender;
+            }
+
+            get name() {
+                return this.#name;
+            }
+
+            set name(value) {
+                this.#name = value;
+            }
+
+            get age() {
+                return this.#age;
+            }
+
+            set age(value) {
+                this.#age = value;
+            }
+
+            get gender() {
+                return this.#gender;
+            }
+
+            set gender(value) {
+                this.#gender = value;
+            }
+        }
+
+
+
+        let p1 = new Person("test", 12, "男");
+        p1.name("孙悟空");
+        console.log(p1);
+    </script>
+</body>
+</html>
